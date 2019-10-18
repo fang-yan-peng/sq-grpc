@@ -90,11 +90,11 @@ maven提供了grpc相关的插件，编译项目自动生成grpc相关的类。�
 
 项目的结构如下：
 
-![image-20191018190344808](/Users/yanpengfang/Library/Application Support/typora-user-images/image-20191018190344808.png)
+![image-20191018190344808](https://github.com/fang-yan-peng/sq-grpc/blob/master/project.png)
 
 这样编译项目就会生成grpc相关的类：
 
-![image-20191018190625773](/Users/yanpengfang/Library/Application Support/typora-user-images/image-20191018190625773.png)
+![image-20191018190625773](https://github.com/fang-yan-peng/sq-grpc/blob/master/generate_code.png)
 
 grpc会提供同步客户端、异步客户端和Future带超时的客户端。本例子中就是GreeGrpc的内部类：GreeterBlockingClient、Greeter和GreeterFutureClient。
 
@@ -806,7 +806,7 @@ perf=com.sq.rpc.example.PerfGrpcInterceptor
 
 目录结构：
 
-![image-20191018201941863](/Users/yanpengfang/Library/Application Support/typora-user-images/image-20191018201941863.png)
+![image-20191018201941863](https://github.com/fang-yan-peng/sq-grpc/blob/master/interceptor.png)
 
 在服务端和客户端配置上拦截器即可。
 
