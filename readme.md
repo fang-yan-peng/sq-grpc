@@ -810,7 +810,7 @@ perf=com.sq.rpc.example.PerfGrpcInterceptor
 
 在服务端和客户端配置上拦截器即可。
 
-1、如果是不依赖spring框架使用sq-grpc则调用ServiceConfig和ReferenceConfig的setInterceptor方法，传入拦截器的名称"perf"即可。
+1、如果是不依赖spring框架使用sq-grpc,则调用ServiceConfig和ReferenceConfig的setInterceptor方法传入拦截器的名称"perf"即可。
 
 2、如果使用spring注解的方式，则在Reference和Service注解中，设置属性interceptor="perf"即可。
 
@@ -838,3 +838,7 @@ perf=com.sq.rpc.example.PerfGrpcInterceptor
 * maxMessageSize 配置在ProtocolConfig上，限制rpc调用的最大传输字节数。
 * threads 配置在ProtocolConfig上，限制处理业务线程数。
 * queues 配置在ProtocolConfig上，限制处理业务任务排队数。
+* connections 配置在ReferenceConfig上，设置与服务连接的数，如果是0则走公共的连接。
+* shareconnections 配置在ReferenceConfig上，设置公共连接数大小。
+
+以上只是常用到的一些配置，还有许多配置需要深入了解项目才能理解。
