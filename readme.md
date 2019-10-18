@@ -10,7 +10,30 @@ Sq-Rpc 封装了现有rpc框架grpc，支持直连、服务注册发现、连接
 * 提供接口耗时，qps等监控。
 
 # 例子
-
+## 依赖
+```xml
+<dependency>
+ <groupId>com.sq</groupId>
+ <artifactId>sq-rpc-registry-zookeeper</artifactId>
+ <version>1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+ <groupId>com.sq</groupId>
+ <artifactId>sq-rpc-grpc</artifactId>
+ <version>1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+ <groupId>com.sq</groupId>
+ <artifactId>sq-rpc-config-api</artifactId>
+ <version>1.0-SNAPSHOT</version>
+</dependency>
+<!--不与spring集成不用依赖此包-->
+<dependency>
+ <groupId>com.sq</groupId>
+ <artifactId>sq-rpc-config-spring</artifactId>
+ <version>1.0-SNAPSHOT</version>
+</dependency>
+```
 ## 一、定义proto文件
 
 helloworld.proto
