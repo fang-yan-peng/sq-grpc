@@ -1,0 +1,3 @@
+failover=com.sq.rpc.cluster.support.FailoverCluster
+failfast=com.sq.rpc.cluster.support.FailfastCluster
+available=com.sq.rpc.cluster.support.AvailableCluster

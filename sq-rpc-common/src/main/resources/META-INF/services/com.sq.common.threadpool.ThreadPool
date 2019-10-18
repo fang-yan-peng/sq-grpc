@@ -1,0 +1,4 @@
+fixed=com.sq.common.threadpool.support.fixed.FixedThreadPool
+cached=com.sq.common.threadpool.support.cached.CachedThreadPool
+limited=com.sq.common.threadpool.support.limited.LimitedThreadPool
+eager=com.sq.common.threadpool.support.eager.EagerThreadPool

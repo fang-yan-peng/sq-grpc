@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sq-grpc="http://com.sq/schema/sq-grpc"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://com.sq/schema/sq-grpc http://com.sq/schema/sq-grpc/sq-grpc.xsd">
+
+    <!-- provider's application name, used for tracing dependency relationship -->
+    <sq-grpc:application name="demo-provider"/>
+
+    <sq-grpc:registry address="zookeeper://127.0.0.1:2181" />
+
+    <!-- use grpc protocol to export service on port 20880 -->
+    <sq-grpc:protocol name="grpc"/>
+
+    <!-- service implementation, as same as regular local bean -->
+    <bean id="greeterService" class="com.sq.rpc.example.GreeterImpl"/>
+
+    <!-- declare the service interface to be exported -->
+    <sq-grpc:service interface="io.grpc.examples.helloworld.GreeterGrpc$Greeter"
+                     ref="greeterService" interceptor="perf"/>
+
+</beans>

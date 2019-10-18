@@ -1,0 +1,1 @@
+nop=com.sq.protocol.grpc.Interceptor.NopGrpcInterceptor

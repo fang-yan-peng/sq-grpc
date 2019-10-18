@@ -1,0 +1,7 @@
+file=com.sq.rpc.cluster.router.file.FileRouterFactory
+script=com.sq.rpc.cluster.router.script.ScriptRouterFactory
+condition=com.sq.rpc.cluster.router.condition.ConditionRouterFactory
+service=com.sq.rpc.cluster.router.condition.config.ServiceRouterFactory
+app=com.sq.rpc.cluster.router.condition.config.AppRouterFactory
+tag=com.sq.rpc.cluster.router.tag.TagRouterFactory
+mock=com.sq.rpc.cluster.router.mock.MockRouterFactory

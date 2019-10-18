@@ -1,0 +1,4 @@
+random=com.sq.rpc.cluster.loadbalance.RandomLoadBalance
+roundrobin=com.sq.rpc.cluster.loadbalance.RoundRobinLoadBalance
+leastactive=com.sq.rpc.cluster.loadbalance.LeastActiveLoadBalance
+consistenthash=com.sq.rpc.cluster.loadbalance.ConsistentHashLoadBalance

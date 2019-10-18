@@ -1,0 +1,1 @@
+nop=com.sq.rpc.cluster.router.condition.config.center.NopDynamicConfigurationFactory

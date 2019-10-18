@@ -1,0 +1,3 @@
+adaptive=com.sq.common.compiler.support.AdaptiveCompiler
+javassist=com.sq.common.compiler.support.JavassistCompiler
+jdk=com.sq.common.compiler.support.JdkCompiler

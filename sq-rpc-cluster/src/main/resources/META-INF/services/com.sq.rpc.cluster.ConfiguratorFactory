@@ -1,0 +1,2 @@
+override=com.sq.rpc.cluster.configurator.override.OverrideConfiguratorFactory
+absent=com.sq.rpc.cluster.configurator.absent.AbsentConfiguratorFactory

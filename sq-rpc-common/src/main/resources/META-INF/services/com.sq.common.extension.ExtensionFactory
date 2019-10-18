@@ -1,0 +1,2 @@
+adaptive=com.sq.common.extension.factory.AdaptiveExtensionFactory
+spi=com.sq.common.extension.factory.SpiExtensionFactory

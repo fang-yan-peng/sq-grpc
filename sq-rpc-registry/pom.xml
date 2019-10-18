@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sq-rpc</artifactId>
+        <groupId>com.sq</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sq-rpc-registry</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>sq-rpc-registry</name>
+    <modules>
+        <module>sq-rpc-registry-api</module>
+        <module>sq-rpc-registry-zookeeper</module>
+        <module>sq-rpc-registry-etcd</module>
+    </modules>
+
+
+</project>
