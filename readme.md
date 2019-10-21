@@ -526,7 +526,7 @@ public class MyConsumer {
 
 ## 三、与spring集成，使用注解的方式
 
-### 1 服务端代码
+### 1、服务端代码
 
 ```java
 package com.sq.rpc.example;
