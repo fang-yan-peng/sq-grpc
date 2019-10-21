@@ -196,15 +196,7 @@ public class MyProviderDirect {
         exportHelloService();
         //最后开启协议
         GrpcProtocol.getGrpcProtocol().start();
-        try {
-            CountDownLatch latch = new CountDownLatch(1);
-            while (true) {
-                latch.await();
-            }
-        } catch (InterruptedException ignored) {
-        }
-
-
+        System.in.read();
     }
 
     @SuppressWarnings("ALL")
@@ -279,14 +271,6 @@ public class MyConsumerDirect {
             e.printStackTrace();
         }
         greetCallback("xiaoming");
-        try {
-            CountDownLatch latch = new CountDownLatch(1);
-            while (true) {
-                latch.await();
-            }
-        } catch (InterruptedException ignored) {
-
-        }
     }
 
     private static <T> T getServiceStub(Class<T> clientClz) {
@@ -384,15 +368,7 @@ public class MyProvider {
         exportHelloService();
         //最后开启协议
         GrpcProtocol.getGrpcProtocol().start();
-        try {
-            CountDownLatch latch = new CountDownLatch(1);
-            while (true) {
-                latch.await();
-            }
-        } catch (InterruptedException ignored) {
-        }
-
-
+        System.in.read();
     }
 
     @SuppressWarnings("ALL")
@@ -468,14 +444,6 @@ public class MyConsumer {
             e.printStackTrace();
         }
         greetCallback("xiaoming");
-        try {
-            CountDownLatch latch = new CountDownLatch(1);
-            while (true) {
-                latch.await();
-            }
-        } catch (InterruptedException ignored) {
-
-        }
     }
 
     private static <T> T getServiceStub(Class<T> clientClz) {

@@ -1,5 +1,6 @@
 package com.sq.rpc.example;
 
+import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
 import com.sq.config.ApplicationConfig;
@@ -23,7 +24,7 @@ public class MyProviderDirect {
 
     private static ProtocolConfig protocol = new ProtocolConfig();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         // 当前应用配置
         application.setName("test-rpc-provider");
 
@@ -38,15 +39,7 @@ public class MyProviderDirect {
         exportHelloService();
         //最后开启协议
         GrpcProtocol.getGrpcProtocol().start();
-        try {
-            CountDownLatch latch = new CountDownLatch(1);
-            while (true) {
-                latch.await();
-            }
-        } catch (InterruptedException ignored) {
-        }
-
-
+        System.in.read();
     }
 
     @SuppressWarnings("ALL")

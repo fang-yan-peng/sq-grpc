@@ -56,14 +56,6 @@ public class MyConsumerDirect {
             e.printStackTrace();
         }
         greetCallback("xiaoming");
-        try {
-            CountDownLatch latch = new CountDownLatch(1);
-            while (true) {
-                latch.await();
-            }
-        } catch (InterruptedException ignored) {
-
-        }
     }
 
     private static <T> T getServiceStub(Class<T> clientClz) {
