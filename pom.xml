@@ -38,6 +38,7 @@
         <grpc.version>1.17.1</grpc.version>
         <yaml.version>1.20</yaml.version>
         <spring.version>4.3.16.RELEASE</spring.version>
+        <servlet.version>3.1.0</servlet.version>
     </properties>
 
     <dependencyManagement>
@@ -157,6 +158,12 @@
                 <artifactId>spring-context</artifactId>
                 <scope>provided</scope>
                 <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <scope>provided</scope>
+                <version>${servlet.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

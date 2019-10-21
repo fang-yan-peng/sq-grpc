@@ -746,7 +746,7 @@ public class Application {
     }
 }
 ```
-
+如果是以tomcat方式启动，没有办法在在main方法中调用GrpcProtocol.getGrpcProtocol().start()，所以重写了org.springframework.web.context.ContextLoaderListener的contextInitialized方法，在web.xml中把org.springframework.web.context.ContextLoaderListener替换成com.sq.config.spring.context.config.SqContextLoaderListener即可。
 ### 2、客户端代码
 
 spring/sq-rpc-consumer.xml
@@ -792,7 +792,6 @@ public class Application {
     }
 }
 ```
-
 ## 五、使用拦截器统计耗时
 
 拦截器以spi的方式接入。
