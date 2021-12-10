@@ -21,7 +21,7 @@
         <log4j.version>1.2.17</log4j.version>
         <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
         <java.version>1.8</java.version>
-        <appache.log4j.version>2.12.1</appache.log4j.version>
+        <appache.log4j.version>2.15.0</appache.log4j.version>
         <spring.version>4.3.16.RELEASE</spring.version>
     </properties>
     <dependencies>
