@@ -29,7 +29,7 @@
         <slf4j.api.version>1.7.28</slf4j.api.version>
         <common.logging.version>1.2</common.logging.version>
         <log4j.version>1.2.17</log4j.version>
-        <appache.log4j.version>2.12.1</appache.log4j.version>
+        <appache.log4j.version>2.16.0</appache.log4j.version>
         <javassist.version>3.25.0-GA</javassist.version>
         <fastjson.version>1.2.60</fastjson.version>
         <etcd.version>0.3.0</etcd.version>
