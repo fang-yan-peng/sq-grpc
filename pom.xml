@@ -31,7 +31,7 @@
         <log4j.version>1.2.17</log4j.version>
         <appache.log4j.version>2.12.1</appache.log4j.version>
         <javassist.version>3.25.0-GA</javassist.version>
-        <fastjson.version>1.2.60</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <etcd.version>0.3.0</etcd.version>
         <curator.version>4.0.1</curator.version>
         <zookeeper.version>3.4.13</zookeeper.version>
