@@ -36,7 +36,7 @@
         <curator.version>4.0.1</curator.version>
         <zookeeper.version>3.4.13</zookeeper.version>
         <grpc.version>1.17.1</grpc.version>
-        <yaml.version>1.20</yaml.version>
+        <yaml.version>1.32</yaml.version>
         <spring.version>4.3.16.RELEASE</spring.version>
         <servlet.version>3.1.0</servlet.version>
     </properties>
